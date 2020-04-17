@@ -32,4 +32,5 @@ https://rfc1149.net/blog/2013/03/05/what-is-the-difference-between-devttyusbx-an
 
 fix for port giving an ‘access denied error’:
 https://stackoverflow.com/questions/27858041/oserror-errno-13-permission-denied-dev-ttyacm0-using-pyserial-from-pyth
+
 https://www.linuxquestions.org/questions/linux-software-2/usb-issue-device-dev-ttyusb0-access-failed-no-such-file-or-directory-4175428160/
