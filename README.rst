@@ -23,12 +23,13 @@ source .bashrc
 ?? source /devel/setup.bash
 roslaunch nmea_navsat_driver nmea_serial_driver.launch
 
-	Reference docs:
-		which port is my device connecting to?
+Reference docs:
+which port is my device connecting to?
 https://askubuntu.com/questions/398941/find-which-tty-device-connected-over-usb
 
-		my device was connecting to ttyACM0 vs ttyUSB0:
+my device was connecting to ttyACM0 vs ttyUSB0:
 https://rfc1149.net/blog/2013/03/05/what-is-the-difference-between-devttyusbx-and-devttyacmx/
-		fix for port giving an ‘access denied error’:
+
+fix for port giving an ‘access denied error’:
 https://stackoverflow.com/questions/27858041/oserror-errno-13-permission-denied-dev-ttyacm0-using-pyserial-from-pyth
 https://www.linuxquestions.org/questions/linux-software-2/usb-issue-device-dev-ttyusb0-access-failed-no-such-file-or-directory-4175428160/
