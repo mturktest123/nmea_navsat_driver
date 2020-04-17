@@ -51,8 +51,12 @@ def main():
     """
     rospy.init_node('nmea_serial_driver')
 
-    serial_port = rospy.get_param('~port', '/dev/ttyUSB0')
-    serial_baud = rospy.get_param('~baud', 4800)
+    #serial_port = rospy.get_param('~port', '/dev/ttyUSB0')
+    #serial_baud = rospy.get_param('~baud', 4800)
+    serial_port = rospy.get_param('~port', '/dev/ttyACM0')
+    serial_port = '/dev/ttyACM0' # can I do this from the roslaunch command by adding a ~port parameter?
+    serial_baud = rospy.get_param('~baud', 9600)
+    
     frame_id = RosNMEADriver.get_frame_id()
 
     try:
